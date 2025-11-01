@@ -13,7 +13,7 @@ from mqtt_bridge import MQTTBridge
 class IntegratedConfigManager:
     """统一配置管理类"""
 
-    def __init__(self, config_path="config.yaml", example_path="config.example.yaml"):
+    def __init__(self, config_path="config.yaml", example_path="config_example.yaml"):
         self.config_path = Path(config_path)
         self.example_path = Path(example_path)
         self.config = self._load_config()
