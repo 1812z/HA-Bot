@@ -1,6 +1,6 @@
 # QQ Bot with Home Assistant Integration
 
-这是一个集成了 Home Assistant 的 QQ 机器人应用。
+这是一个集成了 Home Assistant 的 QQ(NapCat) 机器人应用。
 <img width="2328" height="1407" alt="image" src="https://github.com/user-attachments/assets/2131b070-deae-4e2b-9def-6b72466e168e" />
 
 ## 功能特性
