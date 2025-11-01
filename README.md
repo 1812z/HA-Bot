@@ -13,6 +13,13 @@
 pip install -r requirements.txt
 ```
 
+## 启动程序
+
+```bash
+python main.py
+```
+
+
 ## 配置文件
 
 首次运行时,程序会自动从 `config.example.yaml` 复制配置文件到 `config.yaml`。
