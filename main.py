@@ -115,18 +115,17 @@ class MessageHandler:
             return
 
         # 处理/ha命令
-        if message_text.startswith('/ha'):
+        if message_text == '/ha':
             print("🏠 调用Home Assistant")
             response_data = HA.call_conversation_api(
-                message_text.removeprefix('/ha'),
+                "",
                 self.ha_url,
                 access_token=self.secret,
                 agent_id=self.agent_id
             )
             self.send_group_message(group_id, response_data)
-
         # 处理/screen命令
-        elif '/screen' in message_text:
+        elif message_text == '/screen':
             self.send_group_message(group_id, message_type='screen')
 
     def send_group_message(self, group_id, message='', message_type="text"):
